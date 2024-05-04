@@ -23,6 +23,24 @@ const MenuTab = () => {
           ),
         }}
       />
+      <Tabs.Screen
+        name="Setting"
+        component={Setting}
+        options={{
+          tabBarIcon: ({size, color}) => (
+            <MaterialCommunityIcons name="cog" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarIcon: ({size, color}) => (
+            <MaterialCommunityIcons name="account" size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs.Navigator>
   );
 };
