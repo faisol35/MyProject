@@ -11,6 +11,22 @@ import Profile from './screens/Profile';
 const Stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
 
+const MenuTab = () => {
+  return (
+    <Tabs.Navigator>
+      <Tabs.Screen
+        name="Beranda"
+        component={Beranda}
+        options={{
+          tabBarIcon: ({size, color}) => (
+            <MaterialCommunityIcons name="home" size={size} color={color} />
+          ),
+        }}
+      />
+    </Tabs.Navigator>
+  );
+};
+
 function App() {
   return (
     <NavigationContainer>
