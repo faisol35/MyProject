@@ -8,13 +8,22 @@ import Beranda from './screens/Beranda';
 import Setting from './screens/Setting';
 import Profile from './screens/Profile';
 
-const App = () => {
+const Stack = createNativeStackNavigator();
+const Tabs = createBottomTabNavigator();
+
+function App() {
   return (
-    <View>
-      <Text>App</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Tab"
+          component={MenuTab}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-};
+}
 
 export default App;
 
