@@ -1,13 +1,13 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 
-const MenuIcon = () => {
+const MenuIcon = ({}) => {
   return (
     <TouchableOpacity style={styles.box}>
       <View style={styles.garis}>
         <Text style={styles.text}>Icon</Text>
       </View>
-      <Text style={styles.text}>LABEL</Text>
+      <Text style={styles.text}>{label}</Text>
     </TouchableOpacity>
   );
 };
