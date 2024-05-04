@@ -27,4 +27,13 @@ const Beranda = ({navigation}) => {
 
 export default Beranda;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  tombol: {
+    borderWidth: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 3,
+    margin: 7,
+    borderRadius: 30,
+  },
+});
