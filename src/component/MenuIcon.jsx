@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 
-const MenuIcon = ({}) => {
+const MenuIcon = ({label}) => {
   return (
     <TouchableOpacity style={styles.box}>
       <View style={styles.garis}>
