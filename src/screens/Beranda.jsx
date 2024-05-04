@@ -14,6 +14,7 @@ const Beranda = () => {
       <FlatList
         data={Data}
         renderItem={({item}) => <MenuIcon label={item.label} />}
+        horizontal={true}
       />
     </View>
   );
