@@ -3,15 +3,21 @@ import React from 'react';
 
 const MenuIcon = () => {
   return (
-    <TouchableOpacity>
-      <View>
-        <Text>Icon</Text>
+    <TouchableOpacity style={styles.box}>
+      <View style={styles.garis}>
+        <Text style={styles.text}>Icon</Text>
       </View>
-      <Text>LABEL</Text>
+      <Text style={styles.text}>LABEL</Text>
     </TouchableOpacity>
   );
 };
 
 export default MenuIcon;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  box: {
+    borderWidth: 1,
+    margin: 5,
+    padding: 5,
+  },
+});
